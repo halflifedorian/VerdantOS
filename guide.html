@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VerdantOS</title>
+    <script src="https://kit.fontawesome.com/89a4a39f6a.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="particles-js"></div>
+  <header>
+      <a href="index.html"><img src="assets/logo.png"></a>
+      <nav>
+        <a href='news.html'><button>News <i class="fa-regular fa-newspaper"></i></button></a>
+        <a href='downloads.html'><button>Installation</button></a>
+        <a href='downloads.html'><button>Community</button></a>
+        <a href='downloads.html'><button>Support us</button></a>
+      </nav>
+  </header>
+
+  <script>
+    particlesJS('particles-js', {
+      particles: {
+        number: {
+          value: 80,
+          density: {
+            enable: true,
+            value_area: 800
+          }
+        },
+        color: {
+          value: '#ffffff'
+        },
+        shape: {
+          type: 'circle'
+        },
+        opacity: {
+          value: 0.5,
+          random: false
+        },
+        size: {
+          value: 3,
+          random: true
+        },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: '#ffffff',
+          opacity: 0.4,
+          width: 1
+        },
+        move: {
+          enable: true,
+          speed: 2,
+          direction: 'none',
+          random: false,
+          straight: false,
+          out_mode: 'out',
+          bounce: false
+        }
+      },
+      interactivity: {
+        detect_on: 'canvas',
+        events: {
+          onhover: {
+            enable: true,
+            mode: 'repulse'
+          },
+          onclick: {
+            enable: true,
+            mode: 'push'
+          },
+          resize: true
+        }
+      },
+      retina_detect: true
+    });
+  </script>
+  <footer class="footer">
+      <div class="footer-content">
+          <div class="footer-section">
+              <h4>VerdantOS</h4>
+              <p>Modern, agile, and environmentally-inspired operating system built on Arch Linux.</p>
+              <div class="social-icons">
+                  <a href="#"><i class="fa-brands fa-github"></i></a>
+                  <a href="#"><i class="fa-brands fa-discord"></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#"><i class="fa-brands fa-reddit"></i></a>
+              </div>
+          </div>
+          
+          <div class="footer-section">
+              <h4>Quick Links</h4>
+              <ul>
+                  <li><a href="#">Download</a></li>
+                  <li><a href="#">Installation Guide</a></li>
+                  <li><a href="#">Documentation</a></li>
+                  <li><a href="#">Release Notes</a></li>
+              </ul>
+          </div>
+  
+          <div class="footer-section">
+              <h4>Community</h4>
+              <ul>
+                  <li><a href="#">News</a></li>
+                  <li><a href="#">Community</a></li>
+                  <li><a href="#">Bug Reports</a></li>
+                  <li><a href="#">Get Involved</a></li>
+              </ul>
+          </div>
+  
+          <div class="footer-section">
+              <h4>Newsletter</h4>
+              <p>Stay updated with our latest releases</p>
+              <div class="newsletter-form">
+                  <input type="email" placeholder="Enter your email">
+                  <button><i class="fa-solid fa-paper-plane"></i></button>
+              </div>
+          </div>
+      </div>
+      
+      <div class="footer-bottom">
+          <p>&copy; 2025 VerdantOS. All rights reserved.</p>
+      </div>
+  </footer>
+
+</body>
+</html>

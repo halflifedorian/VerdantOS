@@ -1,1 +1,238 @@
-<p>hi</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VerdantOS</title>
+    <script src="https://kit.fontawesome.com/89a4a39f6a.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div id="particles-js"></div>
+  <header>
+      <a href="index.html"><img src="assets/logo.png"></a>
+      <nav>
+        <a href='news.html'><button>News <i class="fa-regular fa-newspaper"></i></button></a>
+        <a href='downloads.html'><button>Installation</button></a>
+        <a href='downloads.html'><button>Community</button></a>
+        <a href='downloads.html'><button>Support us</button></a>
+      </nav>
+  </header>
+  <div class="container">
+      <h2>VerdantOS is not ready yet!</h2>
+      <a href='guide.html'><button>Get Started</button></a>
+      <a href='downloads.html'><button>Download</button></a>
+      <br>
+      <br>
+      <p>VerdantOS is a modern, agile, and environmentally-inspired operating system built on the robust foundation of Arch Linux. It merges cutting-edge technology with a sleek, green-themed interface that symbolizes growth, renewal, and innovation.</p>
+  </div>
+  <hr>
+  <div class="horizontal-scroll-wrapper">
+      <div class="horizontal-scroll" id="scrollContainer">
+          <div class="scroll-item">Lightweight</div>
+          <div class="scroll-item">Performance-driven</div>
+          <div class="scroll-item">Customizability & Flexibility</div>
+          <div class="scroll-item">Eco-friendly</div>
+          <div class="scroll-item">Rolling Release</div>
+          <div class="scroll-item">Community-Driven Innovation</div>
+          <div class="scroll-item">Enhanced Security & Privacy</div>
+          <div class="scroll-item">Optimized Performance & Efficiency</div>
+      </div>
+  </div>
+  <hr>
+  <script>
+    const scrollContainer = document.getElementById("scrollContainer");
+    let scrollSpeed = 1.5; // Adjust speed for smoothness
+    let direction = 1; // 1 for right, -1 for left
+
+    function autoScroll() {
+        if (scrollContainer.scrollLeft + scrollContainer.clientWidth >= scrollContainer.scrollWidth) {
+            direction = -1; // Reverse at the end
+        } else if (scrollContainer.scrollLeft <= 0) {
+            direction = 1; // Reverse at the start
+        }
+        scrollContainer.scrollLeft += direction * scrollSpeed;
+        requestAnimationFrame(autoScroll); // High-FPS smooth scrolling
+    }
+
+    requestAnimationFrame(autoScroll); // Start smooth auto-scrolling
+    ;
+  </script>
+
+  <div class="main">
+    <div class="column1">
+      <div class="box">
+        <h2>Rolling Release Model</h2>
+        <p>Enjoy a constantly evolving system with the latest packages and updates, ensuring that your OS is always on the bleeding edge of performance and security.</p>
+        <i class="fa-solid fa-compact-disc"></i>
+      </div>
+      <div class="box">
+        <h2>Eco-Inspired Aesthetic</h2>
+        <p>With our signature green hues and nature-inspired design, VerdantOS isn’t just an operating system—it’s an experience. The clean, modern interface puts sustainability and beauty at the forefront.</p>
+        <i class="fa-solid fa-leaf"></i>
+      </div>
+      <div class="box">
+        <h2>Optimized Performance & Efficiency</h2>
+        <p>Built to be lightweight yet powerful, VerdantOS leverages Arch's minimalism to deliver rapid boot times, low resource consumption, and smooth multitasking.</p>
+        <i class="fa-solid fa-microchip"></i>
+      </div>
+    </div>
+    <div class="column2">
+      <div class="box">
+        <h2>Enhanced Security & Privacy</h2>
+        <p>Your data matters. VerdantOS comes with built-in firewalls, encryption tools, and regular security patches to ensure your system remains safe from vulnerabilities.</p>
+        <i class="fa-solid fa-shield-halved"></i>
+      </div>
+      <div class="box">
+        <h2>Community-Driven Innovation</h2>
+        <p>Open-source at its core, VerdantOS thrives on contributions from a global community of developers and users, ensuring that every update is shaped by real-world needs and experiences.</p>
+        <i class="fa-solid fa-lightbulb"></i>
+      </div>
+      <div class="box">
+        <h2>Customizability & Flexibility</h2>
+        <p>Tailor every aspect of your desktop environment. Whether you’re a seasoned developer or a new user, our intuitive customization tools allow you to craft a workspace that fits your unique workflow.</p>
+        <i class="fa-solid fa-pen-ruler"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="features-highlight">
+    <h2>Why Choose VerdantOS?</h2>
+    <div class="feature-cards">
+      <div class="feature">
+        <i class="fa-solid fa-bolt"></i>
+        <h3>Lightning Fast</h3>
+        <p>Boot in seconds, run smoothly, zero bloatware</p>
+      </div>
+      <div class="feature">
+        <i class="fa-solid fa-shield"></i>
+        <h3>Secure by Design</h3>
+        <p>Built-in encryption and security tools</p>
+      </div>
+      <div class="feature">
+        <i class="fa-solid fa-leaf"></i>
+        <h3>Eco-Friendly</h3>
+        <p>Optimized for energy efficiency</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Add a call-to-action section -->
+  <div class="cta-section">
+    <h2>Ready to Experience VerdantOS?</h2>
+    <p>Join thousands of users who have made the switch to a greener computing future.</p>
+    <div class="cta-buttons">
+      <button class="primary">Download Now</button>
+      <button class="second">View Documentation</button>
+    </div>
+  </div>
+
+  <script>
+    particlesJS('particles-js', {
+      particles: {
+        number: {
+          value: 80,
+          density: {
+            enable: true,
+            value_area: 800
+          }
+        },
+        color: {
+          value: '#ffffff'
+        },
+        shape: {
+          type: 'circle'
+        },
+        opacity: {
+          value: 0.5,
+          random: false
+        },
+        size: {
+          value: 3,
+          random: true
+        },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: '#ffffff',
+          opacity: 0.4,
+          width: 1
+        },
+        move: {
+          enable: true,
+          speed: 2,
+          direction: 'none',
+          random: false,
+          straight: false,
+          out_mode: 'out',
+          bounce: false
+        }
+      },
+      interactivity: {
+        detect_on: 'canvas',
+        events: {
+          onhover: {
+            enable: true,
+            mode: 'repulse'
+          },
+          onclick: {
+            enable: true,
+            mode: 'push'
+          },
+          resize: true
+        }
+      },
+      retina_detect: true
+    });
+  </script>
+  <footer class="footer">
+      <div class="footer-content">
+          <div class="footer-section">
+              <h4>VerdantOS</h4>
+              <p>Modern, agile, and environmentally-inspired operating system built on Arch Linux.</p>
+              <div class="social-icons">
+                  <a href="#"><i class="fa-brands fa-github"></i></a>
+                  <a href="#"><i class="fa-brands fa-discord"></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#"><i class="fa-brands fa-reddit"></i></a>
+              </div>
+          </div>
+          
+          <div class="footer-section">
+              <h4>Quick Links</h4>
+              <ul>
+                  <li><a href="#">Download</a></li>
+                  <li><a href="#">Installation Guide</a></li>
+                  <li><a href="#">Documentation</a></li>
+                  <li><a href="#">Release Notes</a></li>
+              </ul>
+          </div>
+  
+          <div class="footer-section">
+              <h4>Community</h4>
+              <ul>
+                  <li><a href="#">News</a></li>
+                  <li><a href="#">Community</a></li>
+                  <li><a href="#">Bug Reports</a></li>
+                  <li><a href="#">Get Involved</a></li>
+              </ul>
+          </div>
+  
+          <div class="footer-section">
+              <h4>Newsletter</h4>
+              <p>Stay updated with our latest releases</p>
+              <div class="newsletter-form">
+                  <input type="email" placeholder="Enter your email">
+                  <button><i class="fa-solid fa-paper-plane"></i></button>
+              </div>
+          </div>
+      </div>
+      
+      <div class="footer-bottom">
+          <p>&copy; 2025 VerdantOS. All rights reserved.</p>
+      </div>
+  </footer>
+
+</body>
+</html>
